@@ -38,78 +38,78 @@ $ npm install ogp-parser
 var ogp = require('ogp-parser');
 ```
 
-## サンプル (リダイレクトあり)
+## Sample (with redirect)
 
-```javascript
+`` `javascript
 
-var parser = require("ogp-parser");
+var parser = require ("ogp-parser");
 var url = "http://ogp.me";
-parser(url, true).then(function(data) {
-	console.log(data);
-}).catch(function(error) {
-	console.error(error);
+parser (url, true) .then (function (data) {
+console.log (data);
+}). catch (function (error) {
+console.error (error);
 });
 
-```
+`` `
 
-## サンプル (リダイレクトなし)
+## Sample (without redirect)
 
-```javascript
+`` `javascript
 
-var parser = require("ogp-parser");
+var parser = require ("ogp-parser");
 var url = "http://ogp.me";
-parser(url, false).then(function(data) {
-	console.log(data);
-}).catch(function(error) {
-	console.error(error);
+parser (url, false) .then (function (data) {
+console.log (data);
+}). catch (function (error) {
+console.error (error);
 });
 
-```
+`` `
 
-## 出力
+## Output
 
-```json
+`` `json
 {
-    "title": "The Open Graph protocol",
-    "ogp": {
-        "og:title": [
-            "Open Graph protocol"
-        ],
-        "og:type": [
-            "website"
-        ],
-        "og:url": [
-            "http://ogp.me/"
-        ],
-        "og:image": [
-            "http://ogp.me/logo.png"
-        ],
-        "og:image:type": [
-            "image/png"
-        ],
-        "og:image:width": [
-            "300"
-        ],
-        "og:image:height": [
-            "300"
-        ],
-        "og:description": [
-            "The Open Graph protocol enables any web page to become a rich object in a social graph."
-        ],
-        "fb:app_id": [
-            "115190258555800"
-        ]
-    },
-    "seo": {
-        "description": [
-            "The Open Graph protocol enables any web page to become a rich object in a social graph."
-        ]
-    }
+    "title": "The Open Graph protocol",
+    "ogp": {
+        "og: title": [
+            "Open Graph protocol"
+        ],
+        "og: type": [
+            "website"
+        ],
+        "og: url": [
+            "http://ogp.me/"
+        ],
+        "og: image": [
+            "http://ogp.me/logo.png"
+        ],
+        "og: image: type": [
+            "image / png"
+        ],
+        "og: image: width": [
+            "300"
+        ],
+        "og: image: height": [
+            "300"
+        ],
+        "og: description": [
+            "The Open Graph protocol enables any web page to become a rich object in a social graph."
+        ],
+        "fb: app_id": [
+            "115190258555800"
+        ]
+    },
+    "seo": {
+        "description": [
+            "The Open Graph protocol enables any web page to become a rich object in a social graph."
+        ]
+    }
 }
 
-```
+`` `
 
-## 免責事項など
+## Disclaimer etc
 
-* 本ライブラリはMITライセンスに設定しました
-* 本ライブラリは商用での利用に特に制限を設けません
+* This library has been set to MIT license
+* This library has no restriction on commercial use
