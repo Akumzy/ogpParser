@@ -1,37 +1,38 @@
 # Open Graph Protocol Parser
 
-このモジュールは，URLからOGPタグ情報、SEO関連のタグ情報などを抽出する為のライブラリです。
+This module is a library to extract OGP tag information and SEO related tag information from URL.
 
-## 更新履歴
+## Change log
 
-* 2018年 1月: v0.4.1リリース (リファクタリング、ES2015対応、他)
-* 2016年 8月: v0.4.0リリース (リファクタリング、Promise対応、他、多くを修正)
-* 2016年 7月: v0.3.1リリース (UTF-8以外の文字コードに対応)
-* 2015年 5月: v0.3.0リリース
-* 2015年 4月: リダイレクトに対応しました。第３引数をtrueにすると、リダイレクトを追跡してページを取得します
-* 2015年 3月: https対応
-* 2015年 3月: ページタイトル情報を追加
-* 2014年 6月: データフォーマットを修正
-* 2014年 6月: seoタグ(name, contentのメタタグ)を追加
+* January 2018: v0.4.1 released (refactoring, ES2015 compatible, others)
+* August 2016: v0.4.0 released (Refactoring, Promise compatible, many others fixed)
+* July 2016: v0.3.1 release (support for character code other than UTF-8)
+* May 2015: v0.3.0 released
+* April 2015: Added support for redirection. If the third argument is true, track redirects and get pages
+* March 2015: https compatible
+* March 2015: Add page title information
+* June 2014: Correct the data format
+* June 2014: Add seo tag (name, content meta tag)
 
 
-> v0.4.0より、Promise導入を始め、ライブラリの仕様を変更しています。
-> v0.3.1以前のライブラリをおつかいの方はご注意ください。
 
-## 依存ライブラリ
+> Starting with v0.4.0, we have introduced promises and changed the library specifications.
+> Please be careful if you use a library of v0.3.1 or earlier.
+
+## Dependent library
 
 * cheerio
-* follow-redirects (新規)
+* follow-redirects (new)
 * jsChardet
 * iconv-lite
 
-## インストール
+## Installation
 
-```bash
+`` `bash
 $ npm install ogp-parser
-```
+`` `
 
-## 使い方
+## How to use
 
 ```javascript
 var ogp = require('ogp-parser');
