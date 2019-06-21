@@ -40,7 +40,7 @@ var ogp = require('ogp-parser');
 
 ## Sample (with redirect)
 
-`` `javascript
+```javascript
 
 var parser = require ("ogp-parser");
 var url = "http://ogp.me";
@@ -50,11 +50,11 @@ console.log (data);
 console.error (error);
 });
 
-`` `
+```
 
 ## Sample (without redirect)
 
-`` `javascript
+```javascript
 
 var parser = require ("ogp-parser");
 var url = "http://ogp.me";
@@ -64,11 +64,11 @@ console.log (data);
 console.error (error);
 });
 
-`` `
+```
 
 ## Output
 
-`` `json
+```json
 {
     "title": "The Open Graph protocol",
     "ogp": {
@@ -107,7 +107,7 @@ console.error (error);
     }
 }
 
-`` `
+```
 
 ## Disclaimer etc
 
