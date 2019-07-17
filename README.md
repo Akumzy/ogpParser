@@ -56,14 +56,14 @@ parser(url, false)
 {
   "title": "The Open Graph protocol",
   "ogp": {
-    "og: title": ["Open Graph protocol"],
-    "og: type": ["website"],
-    "og: url": ["http://ogp.me/"],
-    "og: image": ["http://ogp.me/logo.png"],
-    "og: image: type": ["image / png"],
-    "og: image: width": ["300"],
-    "og: image: height": ["300"],
-    "og: description": ["The Open Graph protocol enables any web page to become a rich object in a social graph."],
+    "og:title": ["Open Graph protocol"],
+    "og:type": ["website"],
+    "og:url": ["http://ogp.me/"],
+    "og:image": ["http://ogp.me/logo.png"],
+    "og:image:type": ["image / png"],
+    "og:image:width": ["300"],
+    "og:image:height": ["300"],
+    "og:description": ["The Open Graph protocol enables any web page to become a rich object in a social graph."],
     "fb: app_id": ["115190258555800"]
   },
   "seo": {
