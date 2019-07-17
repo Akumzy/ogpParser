@@ -1,19 +1,19 @@
 var chai = require('chai');
 var assert = chai.assert;
-var parser = require('../ogpParser');
+var parser = require('../dist').default;
 
-describe('HTTPリクエストが正常に処理される', function() {
+describe ('HTTP request is successfully processed', function () {
   this.timeout(5000);
-  it('アクセスチェック', () => {
-    return parser('http://github.com/ukyoda', true).then(data => {
+  it('Access check', () => {
+    return parser('http://github.com/Akumzy', true).then(data => {
       return Promise.resolve(data);
     });
   });
 });
 
-describe('OGPパーサ出力確認', function() {
+describe('OGP Parser output check', function() {
   this.timeout(5000);
-  parser('http://github.com/ukyoda', true).then(data => {
+  parser('http://github.com/Akumzy', true).then(data => {
     it('指定したキーが全て存在する', () => {
       assert.containsAllKeys(data, ['title', 'ogp', 'seo']);
     });

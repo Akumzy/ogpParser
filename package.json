@@ -1,34 +1,41 @@
 {
-  "name": "ogp-parser",
-  "version": "0.4.2",
+  "name": "@akumzy/ogp-parser",
+  "version": "0.0.2",
   "private": false,
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "follow-redirects": "0.0.3",
-    "iconv-lite": "0.4.13",
-    "jschardet": "1.4.1",
-    "lodash": "^4.17.11"
+    "cheerio": "^1.0.0-rc.3",
+    "follow-redirects": "1.7.0",
+    "iconv-lite": "0.5.0",
+    "jschardet": "2.1.0",
+    "lodash": "^4.17.14"
   },
   "readmeFilename": "README.md",
   "gitHead": "",
   "description": "This Package is Open Graph Parser.",
-  "main": "ogpParser.js",
+  "main": "./dist/index.js",
   "devDependencies": {
+    "@types/cheerio": "^0.22.12",
+    "@types/follow-redirects": "^1.5.0",
+    "@types/iconv-lite": "^0.0.1",
     "chai": "^4.2.0",
-    "mocha": "^5.2.0"
+    "mocha": "^6.1.4"
   },
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha test"
+    "test": "mocha test",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ukyoda/ogpParser.git"
+    "url": "https://github.com/Akumzy/ogpParser.git"
   },
   "keywords": [
     "ogp",
     "OpenGraphProtocol"
   ],
-  "author": "ukyoda",
+  "author": {
+    "name": "Akuma Isaac Akuma",
+    "email": "akumaisaacakuma@gmail.com"
+  },
   "license": "MIT",
   "directories": {
     "example": "example"

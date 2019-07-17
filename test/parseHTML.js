@@ -1,12 +1,12 @@
 var chai = require('chai');
 var assert = chai.assert;
-var parseHtml = require('../utils/parseHtml');
+var parseHtml = require('../dist/utils/parseHtml').default;
 
 const html = `
 <!doctype html>
 <html>
   <head>
-    <title>テストテキスト</title>
+    <title>Test text</title>
     <meta charset="utf-8" />
     <!-- 正常系：OGPタグテストデータ -->
     <meta property="og:title" content="このHTMLはテスト用です。" />

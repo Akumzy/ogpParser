@@ -1,4 +1,4 @@
-var url = process.argv[2] || 'http://github.com/ukyoda';
+var url = process.argv[2] || 'http://github.com/Akumzy';
 
 if(!url || url.match(/^(http|https)\:\/\//g) === null) {
     console.log("Usage: ");
@@ -6,7 +6,7 @@ if(!url || url.match(/^(http|https)\:\/\//g) === null) {
     return;
 }
 
-var ogp = require("../ogpParser");
+var ogp = require("../ogpParser").default;
 console.log("URL:"+url);
 ogp(url,true).then(function(data) {
 	console.log(JSON.stringify(data, null, "    "));
