@@ -6,7 +6,7 @@ if(!url || url.match(/^(http|https)\:\/\//g) === null) {
     return;
 }
 
-var ogp = require("../ogpParser").default;
+var ogp = require("../dist").default;
 console.log("URL:"+url);
 ogp(url,true).then(function(data) {
 	console.log(JSON.stringify(data, null, "    "));

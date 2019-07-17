@@ -1,7 +1,8 @@
 {
   "name": "@akumzy/ogp-parser",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "private": false,
+  "main": "dist/index.js",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "follow-redirects": "1.7.0",
@@ -9,10 +10,7 @@
     "jschardet": "2.1.0",
     "lodash": "^4.17.14"
   },
-  "readmeFilename": "README.md",
-  "gitHead": "",
   "description": "This Package is Open Graph Parser.",
-  "main": "./dist/index.js",
   "devDependencies": {
     "@types/cheerio": "^0.22.12",
     "@types/follow-redirects": "^1.5.0",
