@@ -23,7 +23,7 @@ import ogp from '@akumzy/ogp-parser'
 ## Sample (with redirect)
 
 ```javascript
-import ogp from '@akumzy/ogp-parser'
+import parser from '@akumzy/ogp-parser'
 const url = 'http://ogp.me'
 
 parser(url, true)
@@ -38,7 +38,7 @@ parser(url, true)
 ## Sample (without redirect)
 
 ```javascript
-import ogp from '@akumzy/ogp-parser'
+import parser from '@akumzy/ogp-parser'
 const url = 'http://ogp.me'
 
 parser(url, false)
